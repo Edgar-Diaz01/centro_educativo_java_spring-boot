@@ -1,0 +1,24 @@
+@visualizar todos los contenedores en Docker, incluyendo los inactivos:
+docker ps -a
+
+@inicializar un contenedor
+docker start nombre del contenedor
+
+@seleccionar un contenedor en Docker
+docker exec -it centroeducativo-mysql mysql -p
+Docker exec -it nombre_del_contenedor_o_id nombre_del_gesto_db -p
+
+@ver todas las db dentro del contenedor
+show databases;
+
+@seleccionar una db
+use nombre_db
+
+@ver todas las tablas de la db
+show tables;
+
+@ver una tabla vacía 
+describe usuarios_roles;
+
+@inicializar spring-boot;
+cmd desde la carpeta del pom:  mvn spring-boot:run
